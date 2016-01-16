@@ -8,13 +8,13 @@ $(document).ready(function(){
 		console.log(firstname + " " + password )
 		if(firstname === ""){
 			e.preventDefault();
-			$("h1").html("please fill out the form dumbass")
+			$("h1").html("REQUIRED: Please put a USERNAME")
 		}
 		else if(correct === password ){
 			e.preventDefault();
-			//$("h1").html("Entered Correct Password Thanks")
 			window.location.href = "new.html"
 		} else{
+			e.preventDefault();
 			$("h1").html("WRONG PASSWORD RE-ENTER")
 		}
 	})
